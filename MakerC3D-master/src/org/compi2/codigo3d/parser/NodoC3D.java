@@ -8,30 +8,13 @@ package org.compi2.codigo3d.parser;
  */
 public class NodoC3D {
     private String cad;
-        private String EtVerdadera;
-            private String EtFalsa;
 
     public NodoC3D(String cad) {
         this.cad = cad;
- 
-    }
-    
-    
-       public NodoC3D(String cadena, String EtVerdadera,String EtFalsa) {
-           this.cad = cadena;
-           this.EtVerdadera = EtVerdadera;
-        this.EtFalsa = EtFalsa;
-                
     }
     
     public String getCad(){
-        return cad;        
+        return cad;
     }
-        public String getVerdadero(){
-        return EtVerdadera;        
-    }
-    
-            public String getFalso(){
-        return EtFalsa;        
-    }
+        
 }

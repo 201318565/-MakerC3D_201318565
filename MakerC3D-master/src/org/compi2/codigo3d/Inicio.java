@@ -71,14 +71,12 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_GenerarC3DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_GenerarC3DActionPerformed
-
         String texto = jTextField_Expresion.getText();
         if(texto.isEmpty()){
             System.err.println("No es posible evaluar una cadena en blanco.");
             return;
         }
         try {
-           // ControlC3D.reiniciar();
             jTextArea_Codigo3Dgenerado.setText("");
             System.out.println("Inicia la generación de C3D...");
             scanner scan = new scanner(new BufferedReader( new StringReader(texto)));

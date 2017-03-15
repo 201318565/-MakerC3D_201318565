@@ -1,7 +1,5 @@
 package org.compi2.codigo3d.parser;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author esvux
@@ -9,16 +7,14 @@ import java.util.ArrayList;
 public class ControlC3D {
     
     private static int temp = 0;
-        private static int temp2 = 0;
     private static String c3d = "";
-        public  ArrayList<String> parametros =  new ArrayList<>();
+    
     /**
      * Reinicia las variables estáticas relacionadas con la generación del
      * código de tres direcciones.
      */
     public static void reiniciar(){
         temp = 0;
-        temp2 = 0;
         c3d = "";
     }
     
@@ -29,11 +25,6 @@ public class ControlC3D {
     public static String generaTemp(){
         return "t$"+temp++;
     }
-    
-    public static String etiquetaFV(){
-        return "L"+temp2++;
-    }
-    
     
     /**
      * Agrega la sentencia que recibe como parámetro a la cadena de código
